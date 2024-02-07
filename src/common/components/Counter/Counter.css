@@ -1,0 +1,46 @@
+
+.counter-app {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.count-div {
+  font-size: 32vh;
+}
+
+.count-div:hover {
+  opacity: 0.6;
+  font-size: 33vh;
+}
+
+.buttons-div {
+  display: flex;
+  gap: 2em;
+}
+
+.plus-button, .minus-button {
+  width: 100px;
+  height: 100px;
+  font-size: 2em;
+  border: none;
+  border-radius: 8px;
+}
+
+.plus-button:hover, .minus-button:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+  width: 105px;
+  height: 105px;
+  cursor: pointer;
+}
+
+.plus-button {
+  background-color: #50C878;
+}
+
+.minus-button {
+  background-color: #FF5733;
+}

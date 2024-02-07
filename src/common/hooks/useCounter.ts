@@ -1,6 +1,6 @@
 import type { RootState } from '../../store'
 import { useSelector, useDispatch } from 'react-redux'
-import { increment, decrement } from '../../features/counter/counterSlice'
+import { increment, decrement, incrementByAmount } from '../../features/counter/counterSlice'
 
 function useCounter() {
   
@@ -10,11 +10,13 @@ function useCounter() {
   
   const incrementCount = () => dispatch(increment());
   const decrementCount = () => dispatch(decrement());
+  const incrementCountByAmount = (amount: number) => dispatch(incrementByAmount(amount));
 
   return {
     count,
     incrementCount,
     decrementCount,
+    incrementCountByAmount,
   }
 }
 
