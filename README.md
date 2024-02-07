@@ -1,1 +1,1 @@
-# Simple counter app with React
+# Simple counter app with React & Redux
