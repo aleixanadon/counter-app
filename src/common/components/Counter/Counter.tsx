@@ -1,8 +1,16 @@
 import React from 'react'
+import useCounter from '../../hooks/useCounter'
 
 function Counter() {
+
+  const { count, decrementCount, incrementCount } = useCounter();
+
   return (
-    <div>Counter</div>
+    <>
+      <div>{count}</div>
+      <button onClick={decrementCount}>-</button>
+      <button onClick={incrementCount}>+</button>
+    </>
   )
 }
 
