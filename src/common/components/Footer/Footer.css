@@ -3,6 +3,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1em;
-  gap: 5em;
+  padding: 2em;
+  gap: 1em;
+}
+
+footer > a {
+  font-size: 2vh;
 }
