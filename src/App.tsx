@@ -1,11 +1,15 @@
 import './App.css'
-import Counter from './common/components/Counter/Counter'
+import Footer from './common/components/Footer/Footer'
+import Header from './common/components/Header/Header'
+import Main from './common/components/Main/Main'
 
 function App() {
   return (
-    <>
-      <Counter />
-    </>
+    <div className='app-container'>
+      <Header />
+      <Main />
+      <Footer />
+    </div>
   )
 }
 
